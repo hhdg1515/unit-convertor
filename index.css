@@ -58,6 +58,10 @@ button {
     margin-bottom: 34px;
 }
 
+button:hover {
+  background-color:#B295FF;
+}
+
 .section {
     width: 500px;
     height: 108.57px;
