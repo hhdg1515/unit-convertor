@@ -10,21 +10,24 @@ const kiloToPound =  2.204
 
 convertBtn.addEventListener("click", function () {
     let baseValue =  Number(inputEl.value);
-    let getFeet= baseValue*meterToFeet;
-    let getMeters= baseValue/meterToFeet;
-    lengthEl.textContent = `${baseValue} meters = ${getFeet.toFixed(3)} feet | ${baseValue} feet = ${getMeters.toFixed(3)} meters`
+    if (isNaN(baseValue)) {
+      alert("Please enter a valid number.");    
+  }
+    let convertedFeet= baseValue*meterToFeet;
+    let convertedMeters= baseValue/meterToFeet;
+    lengthEl.textContent = `${baseValue} meters = ${convertedFeet.toFixed(3)} feet | ${baseValue} feet = ${convertedMeters.toFixed(3)} meters`
 })
 
 convertBtn.addEventListener("click", function() {
     let baseValue = Number(inputEl.value);
-    let getGallons= baseValue*literToGallon;
-    let getLitters= baseValue/literToGallon;
-    volumeEl.textContent = `${baseValue} liters = ${getGallons.toFixed(3)} gallons | ${baseValue} gallons = ${getLitters.toFixed(3)} liters` 
+    let convertedGallons= baseValue*literToGallon;
+    let convertedLitters= baseValue/literToGallon;
+    volumeEl.textContent = `${baseValue} liters = ${convertedGallons.toFixed(3)} gallons | ${baseValue} gallons = ${convertedLitters.toFixed(3)} liters` 
 })
 
 convertBtn.addEventListener("click", function() {
     let baseValue = Number(inputEl.value);
-    let getPounds= baseValue*kiloToPound;
-    let getKilos= baseValue/kiloToPound;
-    weightEl.textContent = `${baseValue} kilos = ${getPounds.toFixed(3)} pounds| ${baseValue} pounds = ${getKilos.toFixed(3)} kilos` 
+    let convertedPounds= baseValue*kiloToPound;
+    let convertedKilos= baseValue/kiloToPound;
+    weightEl.textContent = `${baseValue} kilos = ${convertedPounds.toFixed(3)} pounds| ${baseValue} pounds = ${convertedKilos.toFixed(3)} kilos` 
 })
