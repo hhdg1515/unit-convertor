@@ -11,27 +11,29 @@
     <body>
         <section id="container">
             <header>
-                <h1>Metric/Imperial Unit Conversion</h1>
-                <div class="inputfield">
-                    <input id="input" type="text" placeholder="0" pattern="[0-9]+" required>
+                <div class="container">
+                    <h1>Metric/Imperial Unit Conversion</h1>
+                    <div class="inputfield">
+                        <input id="input" type="text" placeholder="0" pattern="[0-9]+" required>
+                    </div>
+                    <button id="convert-btn">Convert</button>   
                 </div>
-                <button id="convert-btn">Convert</button>
             </header>
-            <main>
-            <section>
-                <h2>Length (Meter/Feet)</h2>
-                <p id="length-el">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
-            </section>
-            <section>
+         <main>
+                <section>
+                    <h2>Length (Meter/Feet)</h2>
+                    <p id="length-el">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+                </section>
+                <section>
                     <h2>Volume (Liters/Gallons)</h2>
                     <p id="volume-el">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
-            </section>
-            <section>
+                </section>
+                <section>
                     <h2>Mass (Kilograms/Pounds)</h2>
                     <p id="weight-el">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
-            </section>
-          </main>
-        </section>   
+                </section>
+        </main> 
+        </section>
         <script src="index.js"></script>
     </body>
 </html>
